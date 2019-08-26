@@ -1,0 +1,23 @@
+<% include partials/header %>
+
+<div class="ui container">
+  <form action="/articles" method="POST" class="ui form">
+    <div class="field">
+      <label>Article Title</label>
+      <input type="text" name="article[title]" placeholder="Title">
+    </div>
+    <div class="field">
+      <label>Image URL</label>
+      <input type="text" name="article[image]" placeholder="Image URL">
+    </div>
+    <div class="field">
+    </div>
+    <div class="field">
+      <label>Article Body</label>
+      <textarea name="article[body]"></textarea>
+    </div>
+    <button class="ui button violet inverted" type="submit">Submit</button>
+  </form>
+</div>
+
+<% include partials/footer %>

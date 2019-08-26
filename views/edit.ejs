@@ -1,0 +1,27 @@
+<% include partials/header %>
+
+<div class="ui container">	
+    <h2 id="editTitle" class="centered">Edit <%= article.title %></h2>
+</div>    
+
+<div class="ui container">
+  <form action="/articles/<%= article._id %>?_method=PUT" method="POST" class="ui form">
+    <div class="field">
+      <label>Article Title</label>
+      <input type="text" name="article[title]" value="<%= article.title %>">
+    </div>
+    <div class="field">
+      <label>Image URL</label>
+      <input type="text" name="article[image]" value="<%= article.image %>">
+    </div>
+    <div class="field">
+    </div>
+    <div class="field">
+      <label>Article Body</label>
+      <textarea name="article[body]"><%= article.body %></textarea>
+    </div>
+    <button class="ui button violet inverted" type="submit">Submit</button>
+  </form>
+</div>
+
+<% include partials/footer %>

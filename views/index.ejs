@@ -1,0 +1,14 @@
+<% include partials/header %>
+
+<% articles.forEach(function(article) { %>
+	<div class="ui raised very padded text container segment">
+	  <h2 class="ui header"><%= article.title %></h2>
+	  <img class="image" src="<%= article.image %>">
+	  <p><%= article.body.substring(0, 150) %>...</p>
+	  <a href="/articles/<%= article._id %>"><button class="ui purple basic button">Read More<i class="icon right chevron"></i></button></a>
+	</div>
+<% }); %>
+
+
+<% include partials/footer %>
+

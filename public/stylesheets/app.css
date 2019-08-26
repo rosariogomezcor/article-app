@@ -1,0 +1,18 @@
+.raised.very {
+	margin-top: 70px;
+}
+
+.ui.form {
+	margin-top: 100px;
+}
+
+.ui.button {
+	width: 100%;
+	margin-top: 15px;
+}
+
+#editTitle {
+	padding-top: 50px;
+	margin-bottom: -70px;
+	text-align: center; 
+}
